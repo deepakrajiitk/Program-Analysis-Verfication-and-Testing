@@ -1,0 +1,110 @@
+{
+    "1": {
+        "params": "{'x': 5, 'y': 100, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 11, 12, 13]",
+        "pc": "[3, 12]",
+        "pcEval": "[False, True]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20'}",
+        "constraints": "[Not(y + 2 + 1 < 6), x < 30]"
+    },
+    "2": {
+        "params": "{'x': 30, 'y': 3, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 11, 12]",
+        "pc": "[3, 12]",
+        "pcEval": "[False, False]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20'}",
+        "constraints": "[Not(y + 2 + 1 < 6), Not(x < 30)]"
+    },
+    "3": {
+        "params": "{'x': 30, 'y': 2, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 11, 12]",
+        "pc": "[3, 6, 10, 6, 10, 6, 10, 6, 10, 6, 12]",
+        "pcEval": "[True, True, False, True, False, True, False, True, False, False, False]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1 - 1 - 1 - 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n y + 2 + 1 - 1 != 0,\n y + 2 + 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 - 1 - 1 >= 0,\n Not(False),\n Not(y + 2 + 1 - 1 - 1 - 1 - 1 - 1 != 0),\n y + 2 + 1 - 1 - 1 - 1 - 1 - 1 >= 0,\n Not(x < 30)]"
+    },
+    "4": {
+        "params": "{'x': 29, 'y': 2, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 11, 12, 13]",
+        "pc": "[3, 6, 10, 6, 10, 6, 10, 6, 10, 6, 12]",
+        "pcEval": "[True, True, False, True, False, True, False, True, False, False, True]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1 - 1 - 1 - 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n y + 2 + 1 - 1 != 0,\n y + 2 + 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 - 1 - 1 >= 0,\n Not(False),\n Not(y + 2 + 1 - 1 - 1 - 1 - 1 - 1 != 0),\n y + 2 + 1 - 1 - 1 - 1 - 1 - 1 >= 0,\n x < 30]"
+    },
+    "5": {
+        "params": "{'x': 29, 'y': 1, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 11, 12, 13]",
+        "pc": "[3, 6, 10, 6, 10, 6, 10, 6, 12]",
+        "pcEval": "[True, True, False, True, False, True, False, False, True]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1 - 1 - 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n y + 2 + 1 - 1 != 0,\n y + 2 + 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 - 1 >= 0,\n Not(False),\n Not(y + 2 + 1 - 1 - 1 - 1 - 1 != 0),\n y + 2 + 1 - 1 - 1 - 1 - 1 >= 0,\n x < 30]"
+    },
+    "6": {
+        "params": "{'x': 30, 'y': 1, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 11, 12]",
+        "pc": "[3, 6, 10, 6, 10, 6, 10, 6, 12]",
+        "pcEval": "[True, True, False, True, False, True, False, False, False]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1 - 1 - 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n y + 2 + 1 - 1 != 0,\n y + 2 + 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 - 1 >= 0,\n Not(False),\n Not(y + 2 + 1 - 1 - 1 - 1 - 1 != 0),\n y + 2 + 1 - 1 - 1 - 1 - 1 >= 0,\n Not(x < 30)]"
+    },
+    "7": {
+        "params": "{'x': 30, 'y': 0, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 11, 12]",
+        "pc": "[3, 6, 10, 6, 10, 6, 12]",
+        "pcEval": "[True, True, False, True, False, False, False]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1 - 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n y + 2 + 1 - 1 != 0,\n y + 2 + 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 >= 0,\n Not(False),\n Not(y + 2 + 1 - 1 - 1 - 1 != 0),\n y + 2 + 1 - 1 - 1 - 1 >= 0,\n Not(x < 30)]"
+    },
+    "8": {
+        "params": "{'x': 29, 'y': 0, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 6, 11, 12, 13]",
+        "pc": "[3, 6, 10, 6, 10, 6, 12]",
+        "pcEval": "[True, True, False, True, False, False, True]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1 - 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n y + 2 + 1 - 1 != 0,\n y + 2 + 1 - 1 >= 0,\n Not(False),\n y + 2 + 1 - 1 - 1 != 0,\n y + 2 + 1 - 1 - 1 >= 0,\n Not(False),\n Not(y + 2 + 1 - 1 - 1 - 1 != 0),\n y + 2 + 1 - 1 - 1 - 1 >= 0,\n x < 30]"
+    },
+    "9": {
+        "params": "{'x': 29, 'y': -1, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 11, 12, 13]",
+        "pc": "[3, 6, 10, 6, 12]",
+        "pcEval": "[True, True, False, False, True]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n y + 2 + 1 - 1 != 0,\n y + 2 + 1 - 1 >= 0,\n Not(False),\n Not(y + 2 + 1 - 1 - 1 != 0),\n y + 2 + 1 - 1 - 1 >= 0,\n x < 30]"
+    },
+    "10": {
+        "params": "{'x': 30, 'y': -1, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 6, 11, 12]",
+        "pc": "[3, 6, 10, 6, 12]",
+        "pcEval": "[True, True, False, False, False]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n y + 2 + 1 - 1 != 0,\n y + 2 + 1 - 1 >= 0,\n Not(False),\n Not(y + 2 + 1 - 1 - 1 != 0),\n y + 2 + 1 - 1 - 1 >= 0,\n Not(x < 30)]"
+    },
+    "11": {
+        "params": "{'x': 30, 'y': -2, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 11, 12]",
+        "pc": "[3, 6, 12]",
+        "pcEval": "[True, False, False]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n Not(y + 2 + 1 - 1 != 0),\n y + 2 + 1 - 1 >= 0,\n Not(x < 30)]"
+    },
+    "12": {
+        "params": "{'x': 29, 'y': -2, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2, 3, 4, 5, 6, 11, 12, 13]",
+        "pc": "[3, 6, 12]",
+        "pcEval": "[True, False, True]",
+        "symbEnc": "{'x': 'x', 'y': 'y', 'c1': 'c1', 'c2': 'c2', 'z': 'x + 20', '__rep_counter_1': 'y + 2 + 1 - 1'}",
+        "constraints": "[y + 2 + 1 < 6,\n Not(y + 2 + 1 - 1 != 0),\n y + 2 + 1 - 1 >= 0,\n x < 30]"
+    }
+}

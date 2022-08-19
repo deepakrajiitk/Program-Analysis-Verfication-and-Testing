@@ -1,0 +1,33 @@
+========== IR ==========
+
+0 :a = 3  [ 1 ]
+1 :b = 2  [ 1 ]
+2 (:b < :a)  [ 3 ]
+3 forward :b  [ 1 ]
+4 False  [ 2 ]
+5 forward :a  [ 1 ]
+6 :__rep_counter_1 = 3  [ 1 ]
+7 (:__rep_counter_1 != 0)  [ 4 ]
+8 forward (:a + :b)  [ 1 ]
+9 :__rep_counter_1 = (:__rep_counter_1 - 1)  [ 1 ]
+10 False  [ -3 ]
+11 left :b  [ 1 ]
+12 forward :a  [ 1 ]
+
+
+---------------------OPTIMIZED IR----------------
+
+
+0 :a = 3  [ 1 ]
+1 :b = 2  [ 1 ]
+2 (:b < :a)  [ 3 ]
+3 forward :b  [ 1 ]
+4 False  [ 2 ]
+5 forward :a  [ 1 ]
+6 :__rep_counter_1 = 3  [ 1 ]
+7 (:__rep_counter_1 != 0)  [ 4 ]
+8 forward (:a + :b)  [ 1 ]
+9 :__rep_counter_1 = (:__rep_counter_1 - 1)  [ 1 ]
+10 False  [ -3 ]
+11 left :b  [ 1 ]
+12 forward :a  [ 1 ]
